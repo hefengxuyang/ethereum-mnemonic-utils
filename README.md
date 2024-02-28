@@ -9,7 +9,7 @@ Logic adapted from https://github.com/satoshilabs/slips/blob/master/slip-0010/te
 
 ### Requirements
 
-`python3 with version <=3.8.7(the latest version is unsupported, you can use pyenv when the system contain the python)`
+python3 with version <=3.8.7  (the latest version is unsupported, you can use pyenv when the system contain another python)
 
 `pip install -r requirements.txt`
 
