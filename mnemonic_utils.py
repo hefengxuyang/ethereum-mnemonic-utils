@@ -147,7 +147,6 @@ def mnemonic_to_private_key(mnemonic, str_derivation_path=LEDGER_ETH_DERIVATION_
     derivation_path = parse_derivation_path(str_derivation_path)
 
     bip39seed = mnemonic_to_bip39seed(mnemonic, passphrase)
-    # print("# bip39seed is: ", bip39seed.hex())
 
     master_private_key, master_chain_code = bip39seed_to_bip32masternode(bip39seed)
 
@@ -178,7 +177,7 @@ if __name__ == '__main__':
         with open(sys.argv[1], 'r') as f:
             mnemonic = ' '.join(f.read().split('\n')).rstrip().lstrip()
             private_key = mnemonic_to_private_key(mnemonic)
-            print("# Your mnemonic is: ", mnemonic)
+            # print("# Your mnemonic is: ", mnemonic)
             print("# Your private key is: ", "0x"+private_key.hex())
             # print("# Your private key is: {}".format(str(binascii.hexlify(private_key), 'utf-8')))
             address = get_address_from_private_key(str(binascii.hexlify(private_key), 'utf-8'))
