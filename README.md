@@ -13,7 +13,7 @@ This project is just for test, and the security test will be TODU.
 
 ### Requirements
 
-python3 with version <=3.8.7  (the latest version is unsupported, you can use pyenv when the system contain another python)
+python3 with version <=3.8.7  (you can use the tools pyenv when the system contain another python)
 
 ```sh
 pip install -r requirements.txt
