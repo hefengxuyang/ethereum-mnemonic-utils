@@ -7,10 +7,6 @@ Modularity and extensibility were sacrificed to keep the code as simple and line
 
 Logic adapted from https://github.com/satoshilabs/slips/blob/master/slip-0010/testvectors.py and https://github.com/trezor/python-mnemonic.
 
-Notice:
-
-This project is just for test, and the security test will be TODU.
-
 ### Requirements
 
 python3 with version <=3.8.7  (you can use the tools pyenv when the system contain another python)
