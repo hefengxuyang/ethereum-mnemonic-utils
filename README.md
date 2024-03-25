@@ -20,5 +20,5 @@ pip install -r requirements.txt
 #### Mnemonic key > private key
 ```sh
 	$ echo "legal winner thank year wave sausage worth useful legal winner thank yellow" > myfile
-    $ ./mnemonic_utils.py myfile
+    $ python3 mnemonic_utils.py myfile
 ```
