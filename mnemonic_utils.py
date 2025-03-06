@@ -7,7 +7,7 @@ import struct
 
 from base58 import b58encode_check
 from ecdsa.curves import SECP256k1
-from ethereum import utils
+from eth_account import Account
 
 BIP39_PBKDF2_ROUNDS = 2048
 BIP39_SALT_MODIFIER = "mnemonic"
@@ -162,7 +162,7 @@ def get_address_from_private_key(private_key):
     if '0x' in private_key:
         private_key = private_key.replace('0x', '')
 
-    address = '0x{}'.format(utils.privtoaddr(private_key).hex())
+    address = Account.from_key(private_key).address
     return address
 
 
