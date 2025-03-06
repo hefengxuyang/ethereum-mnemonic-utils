@@ -9,7 +9,7 @@ Logic adapted from https://github.com/satoshilabs/slips/blob/master/slip-0010/te
 
 ### Requirements
 
-python3 with version <=3.8.7  (you can use the tools pyenv when the system contain another python)
+python3 with version >=3.11.2
 
 ```sh
 pip install -r requirements.txt
